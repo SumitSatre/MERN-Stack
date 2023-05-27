@@ -4,9 +4,10 @@ class Student extends React.Component {
 
     render() {
         return (
-            <div>
-                <h2> </h2>
-            </div>
+            <>
+                <h2> {this.props.name} </h2>
+                <button onClick={()=>this.props.f()} >Click</button>
+            </>
         );
     }
 }
