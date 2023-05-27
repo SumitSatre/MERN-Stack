@@ -1,0 +1,15 @@
+{
+  "name": "mongo-db-with-node-js",
+  "version": "1.0.0",
+  "description": "// View all Databases\r show dbs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.4.0"
+  }
+}
