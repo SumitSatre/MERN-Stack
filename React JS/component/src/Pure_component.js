@@ -12,7 +12,7 @@ export default class Component extends PureComponent{
         console.warn("Re-remdering");
         return (
             <>
-                <h1> Pure Component in React Js </h1>
+                <h2> Pure Component in React Js </h2>
                 <h3> {this.state.val} </h3>
 
                 <button onClick={()=>this.setState({val : this.state.val})}> Click Here</button>
