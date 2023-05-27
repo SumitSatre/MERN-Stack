@@ -13,7 +13,10 @@ import './App.css';
 // import User from "./User" ;
 // import LifeCycle from "./LifeCycle";
 // import Unmount from "./ComponentWillUnmount";
-import UseEffect from "./useEffect";
+// import UseEffect from "./useEffect";
+// import UseCSS from "./useCSS";
+ // import User from "./react_bootstrap";
+ import User from "./Array_with_List";
 
 function App() {
 
@@ -24,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <UseEffect />
+        <User />
       </header>
     </div>
   );
