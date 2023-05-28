@@ -5,8 +5,7 @@ const { json } = require("stream/consumers");
 const data = require("./http_data.js");
 
 http.createServer((req , res)=>{
-    res.writeHead(200 , ("Content-Tpye" , "application/js"));
-    res.write(JSON.stringify(data[1]));
+    res.write(JSON.stringify(data));
     res.end();
-}).listen(3000);
+}).listen(5000);
 
