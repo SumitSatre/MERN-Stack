@@ -4,6 +4,7 @@ export default function User(){
 
     let [count, setCount] = useState(1);
     let [data, setData] = useState(1);
+    
 
     const multiCountMemo = useMemo(()=>{
         console.warn("multiCount");
@@ -21,3 +22,5 @@ export default function User(){
         </>
     );
 }
+
+/* Let suppose we create a function in the return statement then if state of any variable props is updated the return will be re-rendered and then function is called again to avoid this problem we use useMemo */
