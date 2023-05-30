@@ -2,7 +2,7 @@
 
 const http = require("http");
 const { json } = require("stream/consumers");
-const data = require("./http_data.js");
+const data = require("./data_for_redux.js");
 
 http.createServer((req , res)=>{
     res.write(JSON.stringify(data));
