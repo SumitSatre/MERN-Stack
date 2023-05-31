@@ -11,7 +11,7 @@ var productSchema = new mongoose.Schema({name : String , price: Number , brand :
 
 
 app.post("/" , async (req , res)=>{
-    let productModel = mongoose.model("products" , productSchema);
+    let productModel = mongoose.model( "products" , productSchema);
 
     let data = new productModel(req.body);
     let result = await data.save();
