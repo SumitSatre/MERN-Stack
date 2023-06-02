@@ -1,35 +1,30 @@
 import './App.css';
-import Account from "./Account";
-import Bonus from "./Bonus";
+import Account from "./components/Account";
+import Bonus from "./components/Bonus";
 
+import {useSelector , useDispatch} from 'react-redux';
 import { useState } from 'react';
 
 
 function App() {
 
-  let [account , setAmount] = useState({amount : 0});
-    
-    function increment(){
-      setAmount({amount : ++account.amount});
-    };
-    function decrement(){setAmount({amount : --account.amount})} ;
-    function incrementByAmt(){setAmount({amount : ++account.amount+10})};
-
+  let amount = useSelector(state=>state.account.amount);
+  let points = useSelector(state=>state.bonus.points);
 
   return (
     <div className="App">
       <section>
-        <h3> APP </h3>
-        <h2> Create Amount : </h2>
-        <h2> Total Amount : </h2>
+        <h1> APP </h1>
+        <h2> Current Amount : <span> ${amount}</span></h2>
+        <h2> Total Bonus :  <span> ${points} </span></h2>
       </section>
 
       <section>
-        <Account increment={()=>increment} decrement={decrement} incrementByAmt={incrementByAmt}  account={account} amount={account.amount}/>
+        <Account />
       </section>
 
       <section>
-      <Bonus />
+        <Bonus />
       </section>
     </div>
   );
