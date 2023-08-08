@@ -26,11 +26,11 @@ app.get("/" , async (req , res)=>{
     res.send(data);
 })
 
-app.put("/" , async (req , res)=>{
+app.put("/update" , async (req , res)=>{
     let productModel = mongoose.model("products" , productSchema);
 
     let data = await productModel.updateOne(
-        {"name" : req.body.name},
+        {"name" : "F55"},
         {$set : req.body}
     );
 
