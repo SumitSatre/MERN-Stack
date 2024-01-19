@@ -1,0 +1,65 @@
+// To check git version 
+git --version
+
+// To set name
+git config --global user.name "Sumit Satre"
+
+// To set email
+git config --global user.email "sumitsatre03@gmail.com"
+
+// To initialize repositary
+git init
+
+// It is used to view status of file
+git status
+
+// This will add file to stagging area
+git add sum.py
+
+// This will commit the file
+git commit -m "initial commit"
+
+// All previous commit time , info
+git log
+
+// All files go the stagging area
+git add .
+
+// After above command use this to submit all files
+git commit -m "initial commit"
+
+// Used to delete file
+git checkout 482838c2a65353d794be3b31da19bea0bef4e6d3(hash code)
+
+// Create a new branch
+git branch branch_name
+
+// Merge two branches
+git merge branch_name
+
+// It is used to move to that branch
+git checkout branch_name
+
+// It is used to push code to github where main is branch name
+git push -u origin main
+
+// to view on which repository code is pushing and fetching
+git remote -v
+
+// To clear git stagging area
+git reset HEAD -- .
+
+/*
+The file is already tracked by Git: If the config/config.env file has already been added to your Git repository before adding it to the .gitignore file, Git will continue tracking changes to the file even if it's later added to .gitignore. In this case, you need to remove the file from Git's tracking using the command git rm --cached config/config.env and commit the change. 
+*/
+or git rm --cached "C:/Users/sumit/StudioProjects/Flutter Food Delivery/Food Delivery Backend/config/.env"
+
+
+
+
+
+
+
+
+
+

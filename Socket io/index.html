@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Socket </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+</head>
+
+<body>
+    <h1>Hello World </h1>
+
+    <script>
+        const socket = io();
+
+        //       socket.on('message' , (data)=>{
+        //           document.write(data);
+        //       });
+        //
+        //       socket.on("mucustomevent" , (data)=>{
+        //           document.write(data.Data);
+        //       })
+
+
+        socket.on('broadcast' , (data)=>{
+            document.body.innerHTML = '';
+            document.write(data.message);
+        })
+        // socket.emit("mucustomevent", { Data: "My name is Sumit" });
+    </script>
+</body>
+
+</html>
